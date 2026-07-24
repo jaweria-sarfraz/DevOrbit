@@ -1,0 +1,171 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family:Arial; 
+    box-sizing: border-box;
+}
+.banner
+{
+    width: 100%;
+    height:100vh;
+    background:#fdf2f4;
+    padding: 30px 8%;
+}
+.navbar
+{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar h1
+{
+    color:black;
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.navbar h1:hover
+{
+    color: rgb(42,250,181);
+    transform:scale(1.1)
+}
+nav ul li 
+{
+    list-style: none;
+    display: inline-block;
+    margin:  0 20px;
+    
+}
+nav ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    position: relative;
+    z-index: 1;
+    padding: 5px;
+}
+nav ul li a::before
+{
+    content: "";
+    width: 100%;
+    height: 0px;
+    background: rgb(42,250,181);
+    left: 0;
+    bottom: -5px;
+    position: absolute;
+    z-index: -1;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: 0.7s;
+}
+nav ul li a:hover::before
+{
+    height: 85px;
+
+}
+.btn
+{
+    padding: 15px 10px;
+    border: .5px solid rgb(42,250,181);
+    border-radius: 4px;
+    background: transparent;
+    color:black;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    
+    
+}
+span
+{
+    width: 0;
+    height: 100%;
+    background:rgb(42,250,181);
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+   transition: 0.5s;
+
+ 
+}
+.btn:hover span
+{
+    width: 100%;
+
+}
+.content
+{
+    margin-top: 50px;
+
+}
+.row
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+    
+}
+.col-1
+{
+    flex-basis: 50%;
+    text-align: left;
+    
+}
+.col-1 h1
+{
+    font-size: 50px;
+}
+.col-1 p
+{
+    font-size: 15px;
+    line-height: 18px;
+    margin: 20px 0;
+    color: rgb(42,250,181);
+}
+.col-2
+{
+    flex-basis: 50%;
+   
+    
+}
+.col-2 img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+.col-2 img:hover
+{
+    transform: translateY(-10px);
+
+}
+.content-btn a
+{
+    width: 140px;
+    padding: 15px 0;
+    border: 5px solid rgb(42,250,181);
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    background: rgb(42,250,181);
+    border-radius: 4px;
+    transition: 0.5s;
+    display: inline-block;
+    text-align: center;
+}
+.content-btn a:hover
+{
+    transform: scale(1.1);
+}
